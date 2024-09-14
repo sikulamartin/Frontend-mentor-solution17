@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <div class="success-message" id="success-message">
+    <div class="success-message-row-1">
+      <img src="assets/images/icon-success-check.svg" class="img-succes">
+      <span class="success-message-message">Message Sent!</span>
+    </div>
+    <div class="success-message-row-2">
+      Thanks for completing the form. We’ll be in touch soon!
+    </div>
+  </div>
+  <div class="wrapper">
+    <form id="contant-form">
+      <h1>Contact Us</h1>
+
+      <div class="form-row">
+        <div class="form-box">
+          <label for="first-name" class="first-name-label">First Name <span class="star">*</span></label>
+          <input id="name" name="first-name" type="text" required aria-required="true">
+        </div>
+
+        <div class="form-box">
+          <label for="last-name" class="last-name-label">Last Name <span class="star">*</span></label>
+          <input id="last-name" name="last-name" type="text" required aria-required="true">
+        </div>
+      </div>
+
+      <div class="form-box form-box-has-margin">
+        <label for="email" class="email-label">Email Address <span class="star">*</span></label>
+        <input id="mail" name="email" type="email" required aria-required="true">
+      </div>
+
+      <label for="type-of-request" style="margin-bottom: 16px;" class="query-type-label">Query Type <span class="star">*</span></label>
+      <div class="form-row form-row-mobile-column">
+        <div class="form-box form-box-check" id="form-box form-box-check-1">
+          <input id="general-enquiry" name="query-type" type="radio" value="general" required aria-required="true">
+          <label for="general-enquiry" class="custom-checkbox" id="custom-1"></label>
+          <img src="assets/images/icon-radio-selected.svg" id="selected-1">
+          <label for="general-enquiry" class="general-enquiry-label">General Enquiry</label>
+        </div>
+        <div class="form-box form-box-check" id="form-box form-box-check-2">
+          <input id="support-request" name="query-type" type="radio" value="support" required aria-required="true">
+          <label for="support-request" class="custom-checkbox" id="custom-2"></label>
+          <img src="assets/images/icon-radio-selected.svg" id="selected-2">
+          <label for="support-request" class="support-request-label">Support Request</label>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <label for="message" style="margin-bottom: 8px;" class="textarea-label">Message <span class="star">*</span></label>
+        <textarea id="message" name="message" class="form-box-has-margin-40" rows="5" required
+          aria-required="true"></textarea>
+      </div>
+
+      <div class="form-consent form-box-has-margin-40">
+        <input id="consent" name="consent" type="checkbox" required aria-required="true">
+        <label for="consent" class="custom-checkbox-not-rounded" id="custom-checkbox-not-rounded-label"></label>
+        <img src="assets/images/icon-checkbox-check.svg" id="check-checked" style="display: none;">
+        <label for="consent" class="consent-label" id="custom-checkbox-not-rounded">I consent to being contacted by the team <span class="star">*</span></label>
+      </div>
+
+      <button class="btnSubmit" id="btn-submit" type="submit">Submit</button>
+    </form>
+
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
